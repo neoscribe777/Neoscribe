@@ -1,0 +1,96 @@
+{
+  "name": "Teal Dark",
+  "author": "Antigravity",
+  "type": "dark",
+  "colors": {
+    "global.colorPrimary": "#008080",
+    "global.colorOutline": "#003333",
+    "global.colorBackgroundPrimary": "#001A1A",
+    "global.colorBackgroundSecondary": "#002626",
+    "global.colorBackgroundTertiary": "#003333",
+    "global.colorTextAndIconPrimary": "#FFFFFF",
+    "global.colorTextAndIconPrimaryInverse": "#000000",
+    "global.colorTextAndIconSecondary": "#B0C4DE",
+    "global.colorTextAndIconDisabled": "#004D4D",
+    "global.colorTextAndIconAdditional": "#00CCCC",
+    "global.colorTextAndIconSuccess": "#71D98C",
+    "global.colorTextAndIconError": "#E45356",
+    "editor.background": "#001A1A",
+    "editor.foreground": "#E0E2E4",
+    "editor.whitespace": "#004D4D",
+    "editor.cursor": "#00FFFF",
+    "editor.handle": "#008080",
+    "editor.selection.background": "#004D4D",
+    "editor.currentLine.background": "#002626",
+    "editor.highlightedDelimiters.background": "#004D4D",
+    "editor.highlightedDelimiters.foreground": "#00FFFF",
+    "editor.matchHighlight.background": "#004D4D",
+    "editor.lineNumber.divider": "#003333",
+    "editor.lineNumber.background": "#001A1A",
+    "editor.lineNumber.foreground": "#006666",
+    "editor.lineNumber.activeForeground": "#00FFFF",
+    "editor.indentGuide.background": "#003333",
+    "editor.indentGuide.activeBackground": "#008080",
+    "editor.popupWindow.corner": "#003333",
+    "editor.popupWindow.background": "#002626",
+    "editor.popupWindow.activeBackground": "#003333"
+  },
+  "tokenColors": [
+    {
+      "settings": {
+        "background": "#001A1A",
+        "foreground": "#E0E2E4"
+      }
+    },
+    {
+      "name": "Comment",
+      "scope": "comment",
+      "settings": {
+        "foreground": "#006666"
+      }
+    },
+    {
+      "name": "Operators",
+      "scope": "keyword.operator",
+      "settings": {
+        "foreground": "#00CCCC"
+      }
+    },
+    {
+      "name": "Strings",
+      "scope": "string",
+      "settings": {
+        "foreground": "#B0C4DE"
+      }
+    },
+    {
+      "name": "Number",
+      "scope": "constant.numeric",
+      "settings": {
+        "foreground": "#00FFFF"
+      }
+    },
+    {
+      "name": "Keyword",
+      "scope": "keyword",
+      "settings": {
+        "foreground": "#008080"
+      }
+    },
+    {
+      "name": "Function",
+      "scope": "support.function,entity.name.function",
+      "settings": {
+        "foreground": "#00E5E5"
+      }
+    },
+    {
+      "name": "Variable",
+      "scope": "variable",
+      "settings": {
+        "foreground": "#E0E2E4"
+      }
+    }
+  ],
+  "semanticHighlighting": true
+}

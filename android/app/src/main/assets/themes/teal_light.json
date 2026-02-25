@@ -1,0 +1,107 @@
+{
+  "name": "Teal Light",
+  "author": "Antigravity",
+  "type": "light",
+  "colors": {
+    "global.colorPrimary": "#009688",
+    "global.colorOutline": "#B2DFDB",
+    "global.colorBackgroundPrimary": "#E0F2F1",
+    "global.colorBackgroundSecondary": "#B2DFDB",
+    "global.colorBackgroundTertiary": "#80CBC4",
+    "global.colorTextAndIconPrimary": "#004D40",
+    "global.colorTextAndIconPrimaryInverse": "#E0F2F1",
+    "global.colorTextAndIconSecondary": "#00796B",
+    "global.colorTextAndIconDisabled": "#B2DFDB",
+    "global.colorTextAndIconAdditional": "#009688",
+    "global.colorTextAndIconSuccess": "#00C853",
+    "global.colorTextAndIconError": "#D50000",
+    "editor.background": "#E0F2F1",
+    "editor.foreground": "#004D40",
+    "editor.whitespace": "#80CBC4",
+    "editor.cursor": "#009688",
+    "editor.handle": "#00796B",
+    "editor.selection.background": "#B2DFDB",
+    "editor.currentLine.background": "#D0EBE8",
+    "editor.highlightedDelimiters.background": "#B2DFDB",
+    "editor.highlightedDelimiters.foreground": "#004D40",
+    "editor.matchHighlight.background": "#80CBC4",
+    "editor.lineNumber.divider": "#B2DFDB",
+    "editor.lineNumber.background": "#F0F9F8",
+    "editor.lineNumber.foreground": "#00796B",
+    "editor.lineNumber.activeForeground": "#004D40",
+    "editor.indentGuide.background": "#B2DFDB",
+    "editor.indentGuide.activeBackground": "#009688",
+    "editor.popupWindow.corner": "#B2DFDB",
+    "editor.popupWindow.background": "#FFFFFF",
+    "editor.popupWindow.activeBackground": "#E0F2F1"
+  },
+  "tokenColors": [
+    {
+      "settings": {
+        "background": "#E0F2F1",
+        "foreground": "#004D40"
+      }
+    },
+    {
+      "name": "Comment",
+      "scope": "comment",
+      "settings": {
+        "foreground": "#00796B",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Operators",
+      "scope": "keyword.operator",
+      "settings": {
+        "foreground": "#D84315"
+      }
+    },
+    {
+      "name": "Strings",
+      "scope": "string",
+      "settings": {
+        "foreground": "#2E7D32"
+      }
+    },
+    {
+      "name": "Number",
+      "scope": "constant.numeric",
+      "settings": {
+        "foreground": "#1565C0"
+      }
+    },
+    {
+      "name": "Keyword",
+      "scope": "keyword",
+      "settings": {
+        "foreground": "#00695C",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Function",
+      "scope": "support.function,entity.name.function",
+      "settings": {
+        "foreground": "#0277BD",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Variable",
+      "scope": "variable",
+      "settings": {
+        "foreground": "#455A64"
+      }
+    },
+    {
+        "name": "Type",
+        "scope": "storage.type,support.type",
+        "settings": {
+            "foreground": "#00838F",
+            "fontStyle": "bold"
+        }
+    }
+  ],
+  "semanticHighlighting": true
+}

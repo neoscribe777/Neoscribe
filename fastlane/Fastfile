@@ -1,0 +1,12 @@
+default_platform(:android)
+
+platform :android do
+  desc "Build the Neoscribe Release APK"
+  lane :build do
+    gradle(
+      task: "assemble",
+      build_type: "Release",
+      project_dir: "android/"
+    )
+  end
+end

@@ -1,0 +1,8 @@
+Neoscribe is a high-performance text editor designed for massive files and markdown with ease. 
+
+Features:
+- Native rendering for files up to several megabytes.
+- Code Editor integration for a premium editing experience.
+- Markdown support with live preview.
+- Multiple tab interface for seamless multitasking.
+

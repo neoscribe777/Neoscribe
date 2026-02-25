@@ -1,0 +1,1 @@
+A powerful, local-first text and large file editor.
