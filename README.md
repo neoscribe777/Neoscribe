@@ -27,15 +27,7 @@ Neoscribe is a high-performance, feature-rich Native application designed for ha
 - Android Studio & JDK 17+
 - React Native Environment Setup
 
-### Quick Build
-
-We've included a handy script for building the release APK:
-
-```bash
-./build-apk.bat
-```
-
-### Manual Build
+### Build
 
 ```bash
 cd android
