@@ -1,6 +1,9 @@
 import { useEditorSettings } from '../store/useEditorSettings';
 import { THEME_PRESETS, ThemeColors } from '../theme/themePresets';
 
+/**
+ * Custom hook to access application-wide theme and settings.
+ */
 export const useAppTheme = (): { 
   theme: ThemeColors; 
   themeId: string; 
