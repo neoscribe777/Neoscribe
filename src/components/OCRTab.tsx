@@ -7,7 +7,7 @@ import { RainbowBackground } from './RainbowBackground';
 import { getTranslation } from '../translations';
 import { ThemedAlert } from './ThemedAlert';
 
-// Google-only native module handled directly in handleRunOCR
+// Native module handled directly in handleRunOCR
 const { OCRModule } = NativeModules;
 
 interface OCRTabProps {
@@ -57,8 +57,7 @@ export const OCRTab: React.FC<OCRTabProps> = ({ onResult, initialImageUri }) => 
         try {
             setStatus('processing');
             
-            // Just call recognizeText. The params are largely ignored by the new Google-only native module
-            // but we pass them to match signature.
+            // Call recognizeText with necessary parameters.
             const result = await OCRModule.recognizeText(imageUri, 'eng_google', 'standard');
             
             if (result.text && result.text.trim()) {

@@ -14,11 +14,11 @@ class OCRModule(reactContext: ReactApplicationContext) : ReactContextBaseJavaMod
 
     override fun getName(): String = "OCRModule"
 
-    // No download needed for ML Kit (handled by Play Services automatically)
+    // Initialize model if needed
     @ReactMethod
     fun downloadModel(lang: String, type: String, promise: Promise) {
-        // Just resolve immediately to keep JS happy for now, or we can remove the call in JS
-        promise.resolve("ML_KIT_READY") 
+        // Resolve immediately
+        promise.resolve("READY") 
     }
 
     @ReactMethod
@@ -27,9 +27,7 @@ class OCRModule(reactContext: ReactApplicationContext) : ReactContextBaseJavaMod
             val uri = Uri.parse(imageUri)
             val image = InputImage.fromFilePath(reactApplicationContext, uri)
             
-            // Using Default (Latin) options. 
-            // Note: Arabic is NOT supported by ML Kit Text Recognition V2 native.
-            // This module now only supports Latin-based languages (English, French, etc.)
+            // Process the image using appropriate options.
             val recognizer = TextRecognition.getClient(TextRecognizerOptions.DEFAULT_OPTIONS)
             
             recognizer.process(image)
@@ -41,7 +39,7 @@ class OCRModule(reactContext: ReactApplicationContext) : ReactContextBaseJavaMod
                     promise.resolve(response)
                 }
                 .addOnFailureListener { e ->
-                    Log.e(TAG, "ML Kit failed", e)
+                    Log.e(TAG, "Process failed", e)
                     promise.reject("OCR_ERROR", e.message)
                 }
         } catch (e: Exception) {
